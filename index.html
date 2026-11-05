@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Учебный проект: адаптивный лендинг стоматологической клиники по макету Figma Community." />
+    <title>Улыбка — стоматологическая клиника</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Зубная формула — на главную">Зубная<span>Формула</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
+        <span></span><span></span><span class="visually-hidden">Открыть меню</span>
+      </button>
+      <nav class="main-nav" id="main-nav" aria-label="Основная навигация">
+        <a href="#services">Услуги</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#doctor">Наш врач</a>
+        <a href="#clinic">Клиника</a>
+        <a href="#faq">Вопросы</a>
+      </nav>
+      <a class="header-phone" href="tel:+78005550123">+7 (800) 555-01-23</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="eyebrow">Стоматология для взрослых и детей</p>
+          <h1 id="hero-title">Профессиональная стоматология</h1>
+          <p class="hero__lead">Заботимся о здоровье ваших зубов и помогаем улыбаться уверенно.</p>
+          <a class="button" href="#contacts">Записаться на приём</a>
+          <p class="hero__note">Комфортное лечение · Внимательные врачи · Современное оборудование</p>
+        </div>
+        <div class="hero__image">
+          <img src="https://images.pexels.com/photos/4270362/pexels-photo-4270362.jpeg?cs=srgb&amp;dl=pexels-cedric-fauntleroy-4270362.jpg&amp;fm=jpg" alt="Стоматолог осматривает пациента в кабинете" fetchpriority="high" />
+        </div>
+      </section>
+
+      <section class="contact-strip" aria-label="Контактная информация">
+        <article><span class="strip-icon strip-icon--address" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M25 13.5c0 6.2-9 15-9 15s-9-8.8-9-15a9 9 0 1 1 18 0Z" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><circle cx="16" cy="13" r="3.1" stroke="currentColor" stroke-width="2.2"/></svg></span><div><strong>Адрес</strong><span>Москва, ул. Примерная, 12</span></div></article>
+        <article><span class="strip-icon" aria-hidden="true">✉</span><div><strong>Почта</strong><a href="mailto:hello@example.ru">hello@example.ru</a></div></article>
+        <article><span class="strip-icon" aria-hidden="true">☎</span><div><strong>Телефон</strong><a href="tel:+78005550123">+7 (800) 555-01-23</a></div></article>
+      </section>
+
+      <section class="section" id="services">
+        <p class="eyebrow">Наша специализация</p>
+        <h2>Стоматологические услуги</h2>
+        <div class="card-grid">
+          <article class="service-card"><span class="service-icon" aria-hidden="true"><img src="assets/icons/therapy.svg" alt="" /></span><h3>Терапия</h3><p>Лечение кариеса и восстановление зубов с заботой о комфорте.</p><a href="#contacts">Подробнее</a></article>
+          <article class="service-card"><span class="service-icon" aria-hidden="true"><img src="assets/icons/orthodontics.svg" alt="" /></span><h3>Ортодонтия</h3><p>Исправление прикуса и создание гармоничной улыбки.</p><a href="#contacts">Подробнее</a></article>
+          <article class="service-card"><span class="service-icon" aria-hidden="true"><img src="assets/icons/implantation.svg" alt="" /></span><h3>Имплантация</h3><p>Восстановление отсутствующих зубов под ключ.</p><a href="#contacts">Подробнее</a></article>
+          <article class="service-card"><span class="service-icon" aria-hidden="true"><img src="assets/icons/surgery.svg" alt="" /></span><h3>Хирургия</h3><p>Плановые процедуры с современным обезболиванием.</p><a href="#contacts">Подробнее</a></article>
+          <article class="service-card"><span class="service-icon" aria-hidden="true"><img src="assets/icons/sparkle-tooth.svg" alt="" /></span><h3>Отбеливание</h3><p>Профессиональное осветление эмали под контролем врача.</p><a href="#contacts">Подробнее</a></article>
+          <article class="service-card"><span class="service-icon" aria-hidden="true"><img src="assets/icons/hygiene.svg" alt="" /></span><h3>Гигиена</h3><p>Бережная чистка и рекомендации для домашнего ухода.</p><a href="#contacts">Подробнее</a></article>
+        </div>
+      </section>
+
+      <section class="section" id="reviews">
+        <p class="eyebrow">Отзывы пациентов</p>
+        <h2>Что говорят наши пациенты</h2>
+        <div class="review-grid">
+          <blockquote class="review"><div class="stars" aria-label="5 из 5">★★★★★</div>«Всё подробно объяснили, лечение прошло комфортно. Спасибо за внимательное отношение!»<cite>Анна · терапия</cite></blockquote>
+          <blockquote class="review"><div class="stars" aria-label="5 из 5">★★★★★</div>«Очень внимательный врач и современная клиника. На приём теперь хожу без волнения.»<cite>Михаил · гигиена</cite></blockquote>
+          <blockquote class="review"><div class="stars" aria-label="5 из 5">★★★★★</div>«Составили понятный план лечения, ответили на все вопросы. Рекомендую!»<cite>Елена · ортодонтия</cite></blockquote>
+        </div>
+      </section>
+
+      <section class="doctor-section" id="doctor">
+        <div class="doctor-photo"><img src="https://images.pexels.com/photos/34683936/pexels-photo-34683936.png?cs=srgb&amp;dl=pexels-ong-ng-c-d-567491655-34683936.jpg&amp;fm=jpg" alt="Врач стоматологической клиники" loading="lazy" /></div>
+        <div class="doctor-copy"><p class="eyebrow">Знакомьтесь</p><h2>Наш врач</h2><p class="doctor-role">Анна Миронова · стоматолог-терапевт</p><p>Для нас важно, чтобы пациент понимал каждый этап лечения и чувствовал себя спокойно. Вместе подберём бережное и подходящее решение.</p><ul><li>Понятный план лечения</li><li>Внимательное отношение</li><li>Современное оборудование</li></ul><a class="text-link" href="#contacts">Записаться на приём</a></div>
+      </section>
+
+      <section class="section clinic-section" id="clinic">
+        <p class="eyebrow">Пространство заботы</p><h2>Наша клиника</h2>
+        <div class="gallery-slider swiper" aria-label="Фотографии клиники">
+          <div class="gallery-track swiper-wrapper">
+            <figure class="gallery-slide swiper-slide"><img src="https://images.pexels.com/photos/5355920/pexels-photo-5355920.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1800" alt="Светлый стоматологический кабинет с голубым креслом" loading="lazy" /></figure>
+            <figure class="gallery-slide swiper-slide"><img src="https://images.pexels.com/photos/4269265/pexels-photo-4269265.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400" alt="Современное стоматологическое кресло и оборудование" loading="lazy" /></figure>
+            <figure class="gallery-slide swiper-slide"><img src="https://images.pexels.com/photos/3884103/pexels-photo-3884103.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1600" alt="Врач беседует с пациентом перед приёмом" loading="lazy" /></figure>
+            <figure class="gallery-slide swiper-slide"><img src="https://images.pexels.com/photos/30902075/pexels-photo-30902075.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1400" alt="Светлый кабинет стоматолога с современным оборудованием" loading="lazy" /></figure>
+          </div>
+          <div class="gallery-dots swiper-pagination" aria-label="Положение в галерее"></div>
+        </div>
+      </section>
+
+      <div class="bottom-gradient">
+      <section class="section faq-section" id="faq">
+        <p class="eyebrow">Отвечаем на вопросы</p><h2>Часто задаваемые вопросы</h2>
+        <div class="faq-list">
+          <details open><summary>Как записаться на первый приём?<span>＋</span></summary><p>Позвоните нам или оставьте заявку через форму. Администратор уточнит, что вас беспокоит, ответит на вопросы и подберёт удобное время.</p></details>
+          <details><summary>Сколько длится консультация?<span>＋</span></summary><p>Первичный приём обычно занимает около 30 минут. Врач выслушает вас и составит план дальнейших действий.</p></details>
+          <details><summary>Можно ли узнать стоимость до лечения?<span>＋</span></summary><p>Да. После осмотра врач объяснит варианты и согласует стоимость до начала лечения.</p></details>
+          <details><summary>Принимаете ли вы детей?<span>＋</span></summary><p>Да, в клинике есть приём для детей. При записи сообщите возраст ребёнка.</p></details>
+          <details><summary>Как подготовиться к визиту?<span>＋</span></summary><p>Специальная подготовка не нужна. Возьмите с собой снимки или документы о предыдущем лечении, если они есть.</p></details>
+        </div>
+      </section>
+
+      <section class="contacts-section" id="contacts">
+        <div class="contact-details">
+          <p class="eyebrow">Будем рады помочь</p>
+          <h2>Контакты</h2>
+          <p><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M20 10c0 5-8 12-8 12S4 15 4 10a8 8 0 1 1 16 0Z"/><circle cx="12" cy="10" r="2.5"/></svg></span>Москва, ул. Примерная, 12</p>
+          <p><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 2 .7 2.9a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.2-1.3a2 2 0 0 1 2.1-.5c.9.3 1.9.6 2.9.7a2 2 0 0 1 1.8 2.1Z"/></svg></span><a href="tel:+78005550123">+7 (800) 555-01-23</a></p>
+          <p><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg></span>Пн–Сб: 9:00–20:00</p>
+          <p><span class="contact-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg></span><a href="mailto:hello@example.ru">hello@example.ru</a></p>
+          <div class="social-links">
+          <a href="#contacts" aria-label="MAX"><svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true"><path fill="url(#max-gradient-a)" d="M0 0h500v500H0z"/><path fill="url(#max-gradient-b)" d="M0 0h500v500H0z"/><path fill="#fff" fill-rule="evenodd" d="M253.223 398.85c-29.441 0-43.123-4.298-66.905-21.49-15.043 19.341-62.679 34.456-64.756 8.596 0-19.412-4.298-35.816-9.17-53.725C106.59 310.168 100 285.598 100 249.997 100 164.968 169.771 101 252.435 101c82.736 0 147.564 67.12 147.564 149.784.278 81.386-65.391 147.632-146.776 148.066m1.218-224.355c-40.258-2.077-71.633 25.788-78.582 69.484-5.73 36.175 4.442 80.229 13.109 82.522 4.155 1.002 14.613-7.45 21.132-13.969a74.5 74.5 0 0 0 36.39 12.966c41.713 2.006 77.356-29.75 80.157-71.418 1.63-41.756-30.487-77.123-72.206-79.513z" clip-rule="evenodd"/><defs><radialGradient id="max-gradient-b" cx="0" cy="0" r="1" gradientTransform="matrix(378.9086 473.90374 -195.26028 156.1199 -11.895 -219.593)" gradientUnits="userSpaceOnUse"><stop stop-color="#00F"/><stop offset="1" stop-opacity="0"/></radialGradient><linearGradient id="max-gradient-a" x1="58.923" x2="500" y1="380.268" y2="250" gradientUnits="userSpaceOnUse"><stop stop-color="#4CF"/><stop offset=".662" stop-color="#53E"/><stop offset="1" stop-color="#93D"/></linearGradient></defs></svg></a>
+          <a href="#contacts" aria-label="ВКонтакте"><svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true"><path fill="#07F" d="M0 0h32v32H0z"/><path fill="#fff" d="M16.8 21.615c-6.15 0-9.656-4.208-9.8-11.22h3.093c.099 5.142 2.364 7.318 4.163 7.767v-7.768h2.904v4.433c1.771-.19 3.641-2.212 4.27-4.442h2.896a8.57 8.57 0 0 1-3.938 5.602A8.87 8.87 0 0 1 25 21.615h-3.192c-.683-2.131-2.391-3.785-4.648-4.01v4.01h-.36"/></svg></a>
+          <a href="#contacts" aria-label="Telegram"><svg viewBox="0 0 248 248" xmlns="http://www.w3.org/2000/svg" fill="none" aria-hidden="true"><path fill="#2AABEE" d="M0 0h248v248H0z"/><path fill="#fff" d="M129.362 93.057q-16.659 6.93-66.588 28.682-8.107 3.225-8.494 6.308c-.436 3.475 3.916 4.844 9.842 6.707l.12.038q1.155.361 2.377.756c5.83 1.895 13.672 4.113 17.749 4.201q5.547.12 12.382-4.574 46.65-31.491 48.162-31.833c.711-.162 1.696-.365 2.364.228.668.594.602 1.718.531 2.019-.431 1.838-17.512 17.718-26.351 25.936l-.074.068c-2.717 2.526-4.64 4.315-5.037 4.726-.894.93-1.807 1.81-2.684 2.655-5.415 5.221-9.477 9.136.226 15.53 4.649 3.064 8.373 5.6 12.085 8.128l.031.02c4.064 2.768 8.119 5.53 13.365 8.968 1.336.876 2.613 1.787 3.856 2.673 4.731 3.372 8.981 6.402 14.232 5.919 3.051-.281 6.202-3.149 7.803-11.706 3.782-20.221 11.218-64.035 12.936-82.09.15-1.582-.039-3.606-.191-4.495-.152-.888-.47-2.155-1.625-3.092-1.368-1.11-3.48-1.344-4.424-1.328-4.295.076-10.884 2.367-42.593 15.556"/></svg></a>
+        </div></div>
+        <form class="contact-form" novalidate>
+          <h3>Запишитесь на консультацию</h3>
+          <p>Оставьте контакты, и администратор перезвонит вам.</p>
+          <label>Ваше имя<input name="name" autocomplete="name" placeholder="Как к вам обращаться" minlength="2" maxlength="80" aria-describedby="name-error" required /><small class="field-error" id="name-error"></small></label>
+          <label>Телефон<input name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__" aria-describedby="phone-error" required /><small class="field-error" id="phone-error"></small></label>
+          <button class="button" type="submit">Отправить заявку</button>
+          <p class="form-message" aria-live="polite"></p>
+          <small>Демонстрационная форма: данные никуда не отправляются.</small>
+        </form>
+      </section>
+      <div class="map-placeholder"><iframe title="Карта Москвы — расположение клиники уточняется" src="https://www.openstreetmap.org/export/embed.html?bbox=37.57%2C55.72%2C37.67%2C55.79&amp;layer=mapnik" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+      </div>
+    </main>
+
+    <footer class="site-footer"><a class="brand" href="#top">Зубная<span>Формула</span></a><p>Клиника и контент вымышленные</p></footer>
+  </body>
+</html>
