@@ -2,6 +2,17 @@
 
 Адаптивный демонстрационный лендинг, свёрстанный по макету Figma Community. Название, клиника, врач и контакты вымышленные.
 
+[Открыть сайт](https://vladdolgopolenko.github.io/dentist-landing/)
+
+![Главная страница на компьютере](preview/desktop.png)
+
+<details>
+<summary>Посмотреть мобильную версию</summary>
+
+<img src="preview/mobile.png" width="300" alt="Первый экран на телефоне">
+
+</details>
+
 ## Возможности
 
 - адаптивные секции и мобильная навигация;
