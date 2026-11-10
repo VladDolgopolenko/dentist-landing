@@ -27,7 +27,7 @@
 
 - HTML5, CSS3, JavaScript;
 - Swiper 12 подключается через jsDelivr CDN;
-- фотографии Pexels, карта OpenStreetMap и шрифт Google Fonts загружаются из интернета.
+- фотографии Pexels хранятся в проекте в формате WebP, карта OpenStreetMap и шрифт Google Fonts загружаются из интернета.
 
 ## Структура
 
